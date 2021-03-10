@@ -10,6 +10,7 @@ class University extends AbstractUniversity
 
 		if(count($this->subjects) == 0) return true;
         foreach($this->subjects as $sub){
+
             if ($sub->getCode() == $code && $sub->getName() == $name){
                 return false;
             }
@@ -23,12 +24,9 @@ class University extends AbstractUniversity
    
 			$sub = new Subject($code,$name);
 	        $this->subjects[] = $sub;
-	        return $sub;
+			return $sub;
+			
     	}
-
-    	/*var_dump($this->subjects);
-    	die;*/
-        
     }
 
     public function addStudentOnSubject(string $subjectCode, Student $student){
@@ -38,8 +36,8 @@ class University extends AbstractUniversity
 			   return $s->addStudent($student->getName(), $student->getStuNum());
 			}
 		}
-
-    }
+	}
+	
     public function getStudentsForSubject(string $subjectCode){
 
     	foreach($this->subjects as $s){
@@ -48,7 +46,8 @@ class University extends AbstractUniversity
 			}
 			return [];
     	}
-    }
+	}
+	
     public function getNumberOfStudents(){
 
     	$total=0;

@@ -21,9 +21,8 @@ class Student
     public function getStuNum(){
     	return $this->studentNumber;
     }
-    
+
     public function setStuNum($studentNumber){
     	$this->studentNumber = $studentNumber;
     }
 }
-?>

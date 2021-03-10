@@ -24,22 +24,19 @@ echo $university->getNumberOfStudents();
 $university->print(); 
 
 
-
-//print_r($subject);
-//die;
 /**
 * This method must print all subjects and for each subject all students registered on the subject int the following format
 * SubjectCode - SubjectName
 * -------------------------
 * StudentName - StudentNumber
 * Student2Name - Student2Number
-* ... // and so on...
+* ... 
 *
 * Subject2Code - Subject2Name
 * --------------------
 * StudentName - StudentNumber
 * Student2Name - Student2Number
-* ... // and so on...
+* ...
 * 
 */ 
 /*
